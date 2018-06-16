@@ -72,6 +72,8 @@ to change it, the attributes came preprogrammed as default in-line, */
 
 label {
     display: block;
+    padding-left: 100px;
+    margin-top: 15px;
 }
 
 .style-logo {
@@ -99,9 +101,12 @@ label {
     /*    background-color: red;*/
 }
 
+/*confused on applying a width property to the input attribute*/
+
 .search-field input {
     margin-top: 20px;
-    padding-left: 110px;
+    margin-left: 100px;
+    padding-left: 10px;
     width: 400px;
 }
 
@@ -134,11 +139,45 @@ label {
     cursor: pointer;
 }
 
-.search-result {
+.search-results {
     display: inline-block;
+    border: 1px solid red;
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 100px;
+}
+
+.pages-button {
+    display: inline-block;
+}
+
+.search-results {
+    display: inline-block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.previous:hover {
+    display: inline-block;
+    padding-left: 10px;
 
 }
 
-.pages {
+.count {
     display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+.next {
+    display: inline-block;
+    padding-right: 10px;
+}
+
+.search-output {
+    display: inline-block;
+    border: 1px solid green;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
