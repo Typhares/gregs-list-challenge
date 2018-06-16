@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: sans-serif;
+    font-size: 18px;
+}
+
+body {
+    margin: 0;
+    font-size: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: 300;
+}
+
+/*p }
+    background-color: aqua;
+}
+*/
+
+/*what is the content box of this image? It is it p or div? the img needs to have padding above it but img element */
+
+img {
+    height: 20px;
+    width: 20px;
+    margin-top: 0px;
+}
+
+logo {
+    color: black;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: purple;
+}
+
+/*logo needs to be black, thin line weight, not purple on hover*/
+
+/*By default, both unordered lists and list items are block level elements, but by setting their display property to inline-block,*/
+
+li {
+    list-style: none;
+    float: left;
+    padding-right: 18px;
+}
+
+nav {
+    display: inline-block;
+    position: fixed;
+}
+
+/*nav, {
+padding-bottom: 30px;
+border: 1px solid green;
+}
+*/
+
+ul {
+    margin: 0;
+}
+
+/*this is tricky label is normally an in-line element had
+to change it, the attributes came preprogrammed as default in-line, */
+
+/*it's the opposite with label, which is in-line and needs to be positioned as if a block element to line the image up to the right*/
+
+label {
+    display: block;
+}
+
+.style-logo {
+    display: inline-block;
+}
+
+.nav-banner {
+    top: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 36px;
+    padding-right: 36px;
+    border-bottom: 1px solid black;
+    background-color: lightgray;
+    /*this a hack to set the width of the nav-container to the whole browser page */
+    width: 100%;
+}
+
+.links-right {
+    display: inline-block;
+    position: relative;
+    float: right;
+    margin: 15px;
+
+    /*    background-color: red;*/
+}
+
+.search-field input {
+    margin-top: 20px;
+    padding-left: 110px;
+    width: 400px;
+}
+
+
+.form-container {
+    padding: 5px;
+
+}
+
+.submit-image-container {
+    padding-top: 5px;
+    display: inline-block;
+
+}
+
+/*use vertical align with img*/
+
+.hover-button {
+    vertical-align: -4px;
+    display: inline-block;
+    border: 1px solid black;
+    width: 22px;
+    height: 22px;
+}
+
+/*psuedo class do this when I hover*/
+
+.hover-button:hover {
+    /*    cursor is prop. little hand to appear*/
+    cursor: pointer;
+}
+
+.search-result {
+    display: inline-block;
+
+}
+
+.pages {
+    display: inline-block;
+}
