@@ -18,10 +18,14 @@ a {
     font-weight: 300;
 }
 
-/*p }
-    background-color: aqua;
+/*
+target all elements that need the rounded edges
+refer to Mical;s
+.submit,
+.form {
+    /*    round edges here*/
+
 }
-*/
 
 /*what is the content box of this image? It is it p or div? the img needs to have padding above it but img element */
 
@@ -124,18 +128,19 @@ label {
 
 /*use vertical align with img*/
 
-.hover-button {
+/*
+
+/*psuedo class do this when I hover*/
+
+#id {}
+
+.hover-button:hover {
+    /*    cursor is prop. little hand to appear*/
     vertical-align: -4px;
     display: inline-block;
     border: 1px solid black;
     width: 22px;
     height: 22px;
-}
-
-/*psuedo class do this when I hover*/
-
-.hover-button:hover {
-    /*    cursor is prop. little hand to appear*/
     cursor: pointer;
 }
 
@@ -152,7 +157,7 @@ label {
 }
 
 .search-results {
-    display: inline-block;
+    /*    display: inline-block;*/
     padding-top: 10px;
     padding-bottom: 10px;
 }
@@ -176,7 +181,7 @@ label {
 }
 
 .search-output {
-    display: inline-block;
+    /*    display: inline-block;*/
     border: 1px solid green;
     padding-top: 10px;
     padding-bottom: 10px;
