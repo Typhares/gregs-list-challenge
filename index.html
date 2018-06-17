@@ -8,54 +8,57 @@
     <!--    <link rel="stylesheet" href="myer-reset.css">-->
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
 </head>
+<!--purpose: search results page
+<section><nav><article> are always children of main?
+-->
 
 <body>
     <div class="nav-banner">
-        <p class="style-logo"><a class="logo" href="www.gregslist.com">Greg's List</a>
+        <p class="style-logo"><a class="logo" href="www.gregslist.com"><strong>Greg's List</strong></a>
         </p>
-        <div class="links-right">
+        <nav class="links-right">
+            <!--          delet class="something-here" -->
             <ul class="something-here">
                 <li><a class="post" href="www.gregslist.com/Account">Post</a></li>
                 <li><a class="account" href="www.gregslist.com/Post">Account</a></li>
             </ul>
-        </div>
+        </nav>
     </div>
-    <!--test wrap the div in a block element !-->
-    <div class="search-field">
-        <!--         use divs when you are a beginner, update improve the file with semantics after get the divisions right-->
+    <!--    how do I know what is "<main>"-->
+    <section class="search-field">
+        <!--use divs when you are a beginner, update improve the file with semantics after get the divisions right-->
         <form class="form" method="post">
-            <!--    position img to the right of 'text' --block or inline element, the img is not in correct place syntax-->
-            <label for="search">Search Jobs</label>
+            <label for="search">Search Jobs></label>
             <input type="text" placeholder="search software jobs" id="search" search="user_job">
-            <!--            use a button with an image here-->
+            <!--use a button with an image here this is hacked and not right, chained 2 submit and hover class-->
             <div class="submit-image-container">
-                <div class="hover-button">
-                    <img src="images/magnifying-glass.png" alt="button">
+                <div class="hover-button"><img src="images/magnifying-glass.png" alt="button">
                 </div>
             </div>
         </form>
         <!--   w3 schools How to Create Previous Next -->
-        <div class="search-results">
-            <a href="#" class="previous">&laquo; Previous</a>
+        <nav class="pagination">
+            <a href="#" class="page">&laquo; prev</a>
             <!--   this is dummy text in the <span>-->
             <span class="count-pages"> 1 to 100 of 200 </span>
-            <a href="#" class="next">Next &raquo;</a>
-
-        </div>
-        <!--   wrong positioning of the div below, it is now a block element
-        lined up underneath the so it needs to be a block element not a div which is inline but the position must be below the class="search-reasults"-->
-        <main class="search-output">
-            <ul>
-                <li>
-
-                </li>
-                <li>
-
-                </li>
-                <li>
-
-            </ul>
-        </main>
+            <a href="#" class="page">next &raquo;</a>
+        </nav>
+    </section>
+    <!--    </main>-->
+    <main>
+        <!--For each result item, use the same element structure and classes. write style rules once for a search result item, same class on each individual search item. repeat text between try to get titles of different lengths see how it impacts your layout.-->
+        <ul class="some-listings">
+            <li class="some-listings">
+                <span class="listing-date">June 18</span>
+                <a href="#" class="listing-title">Frontend Developer</a>
+                <span class="listing-location">Center City</span>
+            </li>
+            <li class="nextthing"></li>
+            <li class="finalthing"></li>
+        </ul>
+    </main>
+</body>
+</div>
 
 </body>
 
