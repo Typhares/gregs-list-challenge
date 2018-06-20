@@ -1,65 +1,50 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8" name="description" content="challenge excercise to code up a gregslist clone of craigslist not as easy as it seems">
+    <meta charset="utf-8" name="description" content="challenge redux, excercise">
     <title>Greg's List Clone</title>
     <link rel="stylesheet" href="challenge-page.css">
     <!--    <link rel="stylesheet" href="myer-reset.css">-->
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
 </head>
-<!--purpose: search results page
-<section><nav><article> are always children of main?
--->
 
 <body>
-    <div class="nav-banner">
-        <p class="style-logo"><a class="logo" href="www.gregslist.com"><strong>Greg's List</strong></a>
-        </p>
-        <nav class="links-right">
-            <!--          delet class="something-here" -->
-            <ul class="something-here">
-                <li><a class="post" href="www.gregslist.com/Account">Post</a></li>
-                <li><a class="account" href="www.gregslist.com/Post">Account</a></li>
+    <header>
+        <h1>Greg's List</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Account</a></li>
+                <li><a href="#">Post</a></li>
             </ul>
         </nav>
-    </div>
-    <!--    how do I know what is "<main>"-->
-    <section class="search-field">
-        <!--use divs when you are a beginner, update improve the file with semantics after get the divisions right-->
-        <form class="form" method="post">
-            <label for="search">Search Jobs></label>
-            <input type="text" placeholder="search software jobs" id="search" search="user_job">
-            <!--use a button with an image here this is hacked and not right, chained 2 submit and hover class-->
-            <div class="submit-image-container">
-                <div class="hover-button"><img src="images/magnifying-glass.png" alt="button">
-                </div>
-            </div>
-        </form>
-        <!--   w3 schools How to Create Previous Next -->
-        <nav class="pagination">
-            <a href="#" class="page">&laquo; prev</a>
-            <!--   this is dummy text in the <span>-->
-            <span class="count-pages"> 1 to 100 of 200 </span>
-            <a href="#" class="page">next &raquo;</a>
-        </nav>
-    </section>
-    <!--    </main>-->
-    <main>
-        <!--For each result item, use the same element structure and classes. write style rules once for a search result item, same class on each individual search item. repeat text between try to get titles of different lengths see how it impacts your layout.-->
-        <ul class="some-listings">
-            <li class="some-listings">
-                <span class="listing-date">June 18</span>
-                <a href="#" class="listing-title">Frontend Developer</a>
-                <span class="listing-location">Center City</span>
-            </li>
-            <li class="nextthing"></li>
-            <li class="finalthing"></li>
-        </ul>
-    </main>
-</body>
-</div>
+    </header>
 
+    <section class="submit-form">
+        <!--        <h2>Search Jobs Form</h2>-->
+        <form class="job-search-form">
+            <!--       input element here-->
+            <label for="search">Search Jobs</label>
+            <input type="text" id="search">
+            <button class="icon"></button>
+            <!--            <label for=""></label>-->
+        </form>
+    </section>
+    <section class="results">
+        <!--  need element here      pagination-->
+        <!--        use class names related to function not what user sees on screen-->
+        <ul class="sub-nav">
+            <li><a href="#">&lt; Prev</a></li>
+            <li>1 to 100 of 1,000</li>
+            <li><a href="#">Next &gt;</a></li>
+        </ul>
+        <!--        list of output -->
+        <ul class="search-results">
+            <li>Degugger</li>
+            <li>Programmer</li>
+            <li>Dev Ops</li>
+        </ul>
+    </section>
 </body>
 
 </html>
